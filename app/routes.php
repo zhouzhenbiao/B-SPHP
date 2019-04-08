@@ -101,3 +101,13 @@ Router::get('/about/developer', function(){
 HTML;
     echo $html;
 });
+
+//直接在网址里敲域名（网址）就是get请求
+
+//登录页面
+Router::get('/login', 'UsersController@login');
+//登录检查页面
+Router::post('/login', 'UsersController@loginCheck');
+
+//展示用户主页 get /home
+Router::get('/home', 'UsersController@home');
