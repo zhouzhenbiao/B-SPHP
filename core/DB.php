@@ -38,7 +38,6 @@ class DB
         if(!preg_match('/^select .+/i', $query)) {
             return $result;
         }
-
         $results = $statement->fetchAll(PDO::FETCH_CLASS, $intoClass);
 
         return $results;

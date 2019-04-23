@@ -21,11 +21,11 @@ return $g_config = [
 
 	'database' =>[
         //数据库名字
-		'database'   => 'test',
+		'database'   => 'bs_book_store',
 		//数据库用户名
         'username'   => 'root',
         //数据库密码
-		'password'   => '',
+		'password'   => 'Zzb111',
         //数据库连接字符串
 		'connection' => 'mysql:host=127.0.0.1',
         //数据库字符编码

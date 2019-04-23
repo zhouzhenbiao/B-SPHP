@@ -111,3 +111,14 @@ Router::post('/login', 'UsersController@loginCheck');
 
 //展示用户主页 get /home
 Router::get('/home', 'UsersController@home');
+
+Router::get('/api/status', function () {
+    $db = new DB();
+    $sql = 'SHOW COLUMNS FROM `t_user`';
+    while ($row = $db->query(sql) != FALSE) {
+        d($row);
+    }
+});
+
+Router::get('/upload', 'UsersController@upload');
+Router::post('/uploading', 'UsersController@uploading');
